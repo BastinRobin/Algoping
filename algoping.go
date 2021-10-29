@@ -11,9 +11,9 @@ func main() {
 	// eg: algoping language, filepath, stdin, stdout
 	// expected return output, time, memory
 	file := "/Users/developer/Desktop/trial/test.py"
-	inFile := "/Users/developer/Desktop/trial/input.txt"
-	outFile := "/Users/developer/Desktop/trial/output.txt"
-	errFile := "/Users/developer/Desktop/trial/error.txt"
+	inFile := "</Users/developer/Desktop/trial/input.txt"
+	outFile := "1>/Users/developer/Desktop/trial/output.txt"
+	errFile := "2>/Users/developer/Desktop/trial/error.txt"
 	lang := "/usr/bin/python"
 	result, elapsed, memory := compile.Sandbox(lang, file, inFile, outFile, errFile)
 	fmt.Println("Result: ", result)
